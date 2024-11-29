@@ -149,7 +149,7 @@ class StuffStock:
                 return
             
             df = pd.DataFrame(data, columns=("Nama", "Kategori", "Jumlah", "Satuan", "Lokasi", "Tanggal"))
-            file_path = filedialog.asksaveasfilename(defaultextension=".csv", filetypes=[("Excel", "*.xlsx"), ("CSV", "*.csv")], title="Simpan File")
+            file_path = filedialog.asksaveasfilename(defaultextension=".csv", filetypes=[ ("CSV", "*.csv"), ("Excel", "*.xlsx")], title="Simpan File")
             
             if file_path:
                 if file_path.endswith(".csv"):
